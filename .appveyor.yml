@@ -50,7 +50,7 @@ install:
       $env:PATH = "C:\Miniconda$env:CONDA\;C:\Miniconda$env:CONDA\Scripts\;$env:PATH"
       $env:PYTHONHOME = "C:\Miniconda$env:CONDA"
       conda --version
-      conda install -y -q pytest numpy scipy
+      conda install -y -q pytest numpy scipy cmake
     }
 - ps: |
     Start-FileDownload 'http://bitbucket.org/eigen/eigen/get/3.3.3.zip'
